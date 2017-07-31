@@ -1,0 +1,95 @@
+body {
+  background-color: #334;
+}
+
+.board {
+  width: 440px;
+  margin: 10px auto;
+}
+
+.row {
+  width: 420px;
+}
+
+.quadrant {
+  border: 5px solid #111;
+  display: inline-block;
+  margin: -2px;
+  height: 200px;
+  width: 200px;
+}
+
+.green {
+  background-color: #0f0;
+  border-top-left-radius: 100%;
+  &.played {
+    background-color: #191;
+  }
+}
+
+.red {
+  background-color: #f00;
+  border-top-right-radius: 100%;
+  &.played {
+    background-color: #911;
+  }
+}
+
+.yellow {
+  background-color: #ff0;
+  border-bottom-left-radius: 100%;
+  &.played {
+    background-color: #991;
+  }
+}
+
+.blue {
+  background-color: #00f;
+  border-bottom-right-radius: 100%;
+  &.played {
+    background-color: #119;
+  }
+}
+
+.controls {
+  text-align: right;
+  border: 20px solid #111;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #ddd;
+  border-radius: 100%;
+  padding: 35px;
+  width: 210px;
+  height: 200px;
+  top: 120px;
+  left: 678px;
+  p {
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+#modal {
+  position: absolute;
+  top: 167px;
+  left: 678px;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  background-color: #ffa;
+  border-radius: 5%;
+  border: 2px solid #446;
+  &.hidden {
+    display: none;
+  }
+}
+
+button {
+  border-radius: 5%;
+  font-weight: 600;
+  background-color: #ffa;
+  &.on {
+    background-color: #f33;
+  }
+}
+

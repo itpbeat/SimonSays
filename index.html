@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>BeatBoxing SimonSays</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+      
+</head>
+
+
+<body>
+  
+  <h1>Beatboxing Simon Says</h1>
+  <h2>Hit Start and try to follow the sequence with the mouse. If you can follow the sequence 8 times, you win</h2>
+  
+  <div class="board">
+  <div class="row">
+    <div class="quadrant green">
+    <p>P</p>
+    </div>
+    
+    <div class="quadrant red">
+      <p>T</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="quadrant yellow"><p>K</p></div>
+    <div class="quadrant blue"><p>S</p></div>
+  </div>
+  <div class="controls">
+    <p id="count">0</p>
+    <button id="start">Start</button>
+    <button id="strict">Strict</button>
+    <button id="reset">Reset</button>
+  </div>
+</div>
+
+<div id="modal" class="hidden">
+  <h1 id="modalMessage">Win!</h1>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
